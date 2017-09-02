@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <com.example.topbartemplet.Topbar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        custom:leftBackground="#27edea"
+        custom:leftText="Back"
+        custom:leftTextColor="#ed5252"
+        custom:rightBackground="#27edea"
+        custom:rightText="More"
+        custom:rightTextColor="#ed5252"
+        custom:title="自定义标题"
+        custom:titleTextColor="#123412"
+        custom:titleTextSize="10sp" />
+    <!--API 21后，android:textAllCaps属性在values-v21下的styles中设置-->
+
+</RelativeLayout>
